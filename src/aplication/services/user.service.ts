@@ -1,7 +1,7 @@
 import { BadRequestException, Injectable } from "@nestjs/common"
 import { User } from "../../domain/entities/user.entity"
 import { plainToClass } from 'class-transformer';
-import type { UserRepository } from "../../domain/repositories/user.repository.interface"
+import type { IUserRepository } from "../../domain/repositories/user.repository.interface"
 import type { IUserInDto, IUserOutDto } from "../dto/user/index"
 
 @Injectable()

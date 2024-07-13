@@ -1,6 +1,6 @@
 import { User } from "../entities/user.entity"
 
-interface UserRepository {
+interface IUserRepository {
     create: (user: User) => Promise<User>,
     findAll: () => Promise<User[]>,
     findById: (id: number) => Promise<User>,
@@ -11,5 +11,5 @@ interface UserRepository {
 }
 
 export type {
-    UserRepository
+    IUserRepository
 }
